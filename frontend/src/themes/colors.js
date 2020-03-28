@@ -3,8 +3,8 @@ export default {
 
   gray: '#333',
   lightGray: '#dcdce6',
-  mediumGray: '#41414d',
-  lighterGray: '#E6E6E6',
+  mediumGray: '#a8a8b3',
+  lighterGray: '#737380',
 
   shadow: '#00000029',
 
@@ -15,7 +15,6 @@ export default {
   red: '#e20041',
 
   purple: '#7159c1',
-  lightPurple: '#737380',
 
   transparent: 'transparent',
 };

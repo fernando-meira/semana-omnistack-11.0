@@ -55,7 +55,7 @@ export const Section = styled.section`
     text-decoration: none;
     transition: opacity 0.2s;
     font-size: ${pxToRem(18)};
-    color: ${colors.mediumGray};
+    color: ${colors.lighterGray};
   }
 
   a:hover {
