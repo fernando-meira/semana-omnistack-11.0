@@ -1,13 +1,13 @@
 import React from 'react';
 
 import Global from './themes/global';
-import { Logon } from './pages';
+import Routes from './routes';
 
 function App() {
   return (
     <>
       <Global />
-      <Logon />
+      <Routes />
     </>
   );
 }
