@@ -4,11 +4,6 @@ import { colors } from '../../themes';
 import { pxToRem } from '../../functions';
 
 export const Container = styled.header`
-  width: 100%;
-  padding: 0 ${pxToRem(32)};
-  max-width: ${pxToRem(1180)};
-  margin: ${pxToRem(32)} auto;
-
   display: flex;
   align-items: center;
 
