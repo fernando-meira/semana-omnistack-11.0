@@ -15,7 +15,7 @@ export default {
   red: '#e20041',
 
   purple: '#7159c1',
-  lightPurple: '#B5ABD4',
+  lightPurple: '#737380',
 
   transparent: 'transparent',
 };
