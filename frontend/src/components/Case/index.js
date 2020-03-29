@@ -6,7 +6,6 @@ import { colors } from '../../themes';
 import { Container } from './styles';
 
 export default function Case({ incident, onDelete }) {
-  console.log(incident);
   return (
     <Container>
       <strong>Caso:</strong>

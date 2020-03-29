@@ -8,7 +8,7 @@ import { colors } from '../../themes';
 
 import { Container } from './styles';
 
-export default function Header() {
+export default function Header({ logout }) {
   const ongName = localStorage.getItem('ongName');
 
   return (
@@ -19,7 +19,7 @@ export default function Header() {
 
       <Link to="/incidents/new">Cadastrar novo caso</Link>
 
-      <button type="button">
+      <button type="button" onClick={logout}>
         <FiPower size="18" color={colors.red} />
       </button>
     </Container>

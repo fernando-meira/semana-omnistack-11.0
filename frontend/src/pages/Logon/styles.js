@@ -44,15 +44,17 @@ export const Form = styled.form`
   }
 
   a {
+    margin-top: ${pxToRem(40)};
+
     display: flex;
     align-items: center;
-    margin-top: ${pxToRem(40)};
+
+    color: ${colors.mediumGray};
+    font-size: ${pxToRem(18)};
 
     font-weight: 500;
     text-decoration: none;
     transition: opacity 0.2s;
-    font-size: ${pxToRem(18)};
-    color: ${colors.mediumGray};
   }
 
   a:hover {
@@ -63,19 +65,20 @@ export const Form = styled.form`
 export const Button = styled.button`
   width: 100%;
   height: ${pxToRem(60)};
+  margin-top: ${pxToRem(16)};
   border: 0;
   border-radius: ${pxToRem(8)};
 
   display: inline-block;
 
-  color: ${colors.white};
   background: ${colors.red};
+
+  color: ${colors.white};
+  font-size: ${pxToRem(18)};
   font-weight: bold;
-  margin-top: ${pxToRem(16)};
+  line-height: ${pxToRem(60)};
   text-align: center;
   text-decoration: none;
-  font-size: ${pxToRem(18)};
-  line-height: ${pxToRem(60)};
   transition: filter 0.2s;
 
   :hover {

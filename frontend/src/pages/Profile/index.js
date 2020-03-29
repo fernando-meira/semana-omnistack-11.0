@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 import api from '../../services/api';
 
@@ -9,8 +9,8 @@ import { Container } from './styles';
 
 export default function Profile() {
   const [incidents, setIncidents] = useState([]);
+  const history = useHistory();
   const ongId = localStorage.getItem('ongId');
-  const ongName = localStorage.getItem('ongName');
 
   useEffect(() => {
     api
@@ -38,9 +38,14 @@ export default function Profile() {
     }
   }
 
+  function handleDelete() {
+    localStorage.clear();
+    history.push('/');
+  }
+
   return (
     <Container>
-      <Header />
+      <Header logout={() => handleDelete()} />
       <h1>Casos Cadastrados</h1>
       <ul>
         {incidents.map((incident) => (
