@@ -9,11 +9,13 @@ import { colors } from '../../themes';
 import { Container } from './styles';
 
 export default function Header() {
+  const ongName = localStorage.getItem('ongName');
+
   return (
     <Container>
       <img src={logoImg} alt="Be The Hero" />
 
-      <span>Bem vinda, APAD</span>
+      <span>Bem vinda, {ongName}</span>
 
       <Link to="/incidents/new">Cadastrar novo caso</Link>
 

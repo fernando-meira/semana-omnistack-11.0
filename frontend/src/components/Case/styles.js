@@ -6,9 +6,10 @@ import { colors } from '../../themes';
 export const Container = styled.li`
   position: relative;
 
+  height: auto;
   margin: ${pxToRem(24)} 0;
   padding: ${pxToRem(24)};
-  min-width: ${pxToRem(500)};
+  width: ${pxToRem(500)};
   border-radius: ${pxToRem(8)};
 
   list-style: none;

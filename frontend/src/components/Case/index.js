@@ -5,19 +5,25 @@ import { colors } from '../../themes';
 
 import { Container } from './styles';
 
-export default function Case() {
+export default function Case({ incident, onDelete }) {
+  console.log(incident);
   return (
     <Container>
       <strong>Caso:</strong>
-      <p>Caso Teste</p>
+      <p>{incident.title}</p>
 
       <strong>Descrição:</strong>
-      <p>Descrição Teste</p>
+      <p>{incident.description}</p>
 
       <strong>Valor:</strong>
-      <p>120</p>
+      <p>
+        {Intl.NumberFormat('pt-BR', {
+          style: 'currency',
+          currency: 'BRL',
+        }).format(incident.value)}
+      </p>
 
-      <button type="button">
+      <button type="button" onClick={onDelete}>
         <FiTrash2 size={20} color={colors.mediumGray} />
       </button>
     </Container>

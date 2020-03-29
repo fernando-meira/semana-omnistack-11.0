@@ -29,6 +29,16 @@ export const Form = styled.form`
     font-size: ${pxToRem(32)};
   }
 
+  input {
+    width: 100%;
+    height: ${pxToRem(60)};
+    padding: 0 ${pxToRem(24)};
+    border-radius: ${pxToRem(8)};
+    border: ${pxToRem(1)} solid ${colors.lightGray};
+
+    color: ${colors.gray};
+  }
+
   svg {
     margin-right: ${pxToRem(8)};
   }
